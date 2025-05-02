@@ -125,8 +125,8 @@ output application/json
 			<http:headers ><![CDATA[#[output application/java
 ---
 {
-	"client_secret" : "${secure::p_layer.client_secret}",
-	"client_id" : "${secure::p_layer.client_id}"
+	"client_id" : "${secure::p_layer.client_id}",
+	"client_secret" : "${secure::p_layer.client_secret}"
 }]]]></http:headers>
 		</http:request>
 		<ee:transform doc:name="Transform Message">
